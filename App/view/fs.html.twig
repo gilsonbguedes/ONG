@@ -1,10 +1,4 @@
-<!DOCTYPE html>
-<html>
-    <head>
-        <title></title>
-        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-    </head>
-    <body>
+{% include 'header.html.twig'%}
         <ul id="navigation">
         {% for item in dado %}
                 <li>{{item.id}}</li>
@@ -15,12 +9,13 @@
           
             
             {%if not filtro.empty %}
-            <div>
+<div class="container">
                 {{filtro}}
-                carregou
+                    <div class="alert alert-block">
+                        Lista
+                    </div>
             </div>
             {%else%}
             <h3>Dados não encontrados</h3>
             {%endif %}
-            </body>
-        </html>
+ {% include 'footer.html.twig'%}
