@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title></title>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    </head>
+    <body>
+        <ul id="navigation">
+        {% for item in dado %}
+                <li>{{item.id}}</li>
+                <li>{{item.nome}}</li>
+        {% endfor %}
+                </ul>
+            
+          
+            
+            {%if not filtro.empty %}
+            <div>
+                {{filtro}}
+                carregou
+            </div>
+            {%else%}
+            <h3>Dados não encontrados</h3>
+            {%endif %}
+            </body>
+        </html>
