@@ -17,8 +17,8 @@ $app = new Slim\Slim(array(
 /**
  * Routers
  */
-$app->get('/gilson/:nome', function ($name) use($app) {
-            echo $name;
+$app->get('/', function () use($app) {
+           
             $result = OrgaoController::getAll();
             $title = 'sistema';
             $res = OrgaoController::getByName('conselho tutelar');
