@@ -2,8 +2,8 @@
 
 class OrgaoController {
 
-    public function presiste(Orgao $orgao, array $params) {
-        $result = $orgao::create($params);
+    public static function presiste(array $params) {
+        $result = Orgao::create($params);
         return $result;
     }
 
