@@ -7,7 +7,7 @@ $capsule->addConnection(array(
     'host' => 'localhost',
     'database' => 'ajax',
     'username' => 'postgres',
-    'password' => 'gil1168',
+    'password' => 'senha',
     'prefix' => '',
     'charset' => 'utf8',
     //'collation' => 'utf8_general_ci',
