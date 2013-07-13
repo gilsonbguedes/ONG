@@ -1,11 +1,15 @@
 <?php
 
-class Colaborador extends ActiveRecord\Model {
+/**
+ * @author gilson
+ * @version 1.0
+ */
+class Colaborador extends \Illuminate\Database\Eloquent\Model {
 
-    static $table_name = 'colaboradores';
-
-    public function set_senha($senha) {
-        $this->encrypted_senha = md5($senha);
-    }
-
+    /**
+     * @var $table = nome da tabela na base de dados
+     */
+    protected $table = "colaborador";
+    
 }
+

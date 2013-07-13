@@ -1,5 +1,7 @@
 $(document).ready(function() {
-    $('form').validate({
+    
+    $("#form").validate({
+        debug: true,
         rules: {
             login: {required: true, minlength: 3},
             password: {required: true, minlength: 5}
@@ -10,3 +12,5 @@ $(document).ready(function() {
         }
     });
 });
+
+ 

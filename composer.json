@@ -21,14 +21,9 @@
         "illuminate/database": "*",
         "dhorrigan/capsule": "*"
     },
-            
-     "autoload": {
-        "classmap": [
-            "App/models",
-            "App/controller/",
-            "App/config/config.php"
-            
-        ]
+    "autoload": {
+        "classmap": ["App/models/", "App/models/"],
+        "files": ["App/config/config.php","App/config/db.php"]
     }
 
 }
